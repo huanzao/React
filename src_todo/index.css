@@ -1,0 +1,36 @@
+.box{
+    text-align: center;
+    height: 800px;
+    width: 1200px;
+    margin: auto;
+    border: 1px solid red;
+}
+.box>div:nth-child(3){
+    display: flex;  
+}
+.box>div:nth-child(3)>div{
+    width: 50%;
+    height: 500px;
+    text-align: left;
+    padding:10px ;
+    box-sizing: border-box;
+}
+.box>div:nth-child(3)>div:first-child{
+    border-right:1px solid red ;
+}
+ul>li{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    border-bottom:1px solid #333 ;
+}
+ul>li:last-child{
+    border: 0;
+}
+.pinglun_list>li>p>button{
+    display: block;
+    float: right;
+}
+.pinglun_list>li>div{
+    padding-left: 40px;
+}
