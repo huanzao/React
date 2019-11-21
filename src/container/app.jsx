@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import PropTypes from 'prop-types'
-import {connect,132132123} from 'react-redux'
+import {connect} from 'react-redux'
 
 import Search from '../component/search'
 import List from '../component/list'
