@@ -17,11 +17,11 @@ const initState={
         {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
     ]
 }
-export function mySearch(state=initState.dataInit,active){
+export function mySearch(state=initState.dataInit,action){
     switch(action.type){
         case SEARCH:
             return state.filter((item)=>{
-                if (item.name.indexOf(value)!==-1){
+                if (item.name.indexOf('f')!==-1){
                     return item
                 } 
             })

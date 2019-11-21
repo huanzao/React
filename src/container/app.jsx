@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
 
 import Search from '../component/search'
 import List from '../component/list'
@@ -63,3 +64,8 @@ class App extends Component{
         )
     }
 }
+
+export default connect(
+    state=>({dataInit:state.dataInit}),
+    {searchItem}
+)(App)
